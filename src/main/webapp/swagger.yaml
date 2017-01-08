@@ -1,0 +1,32 @@
+---
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: ""
+host: "localhost:7070"
+basePath: "/Swagger/api"
+tags:
+- name: "hello"
+schemes:
+- "http"
+paths:
+  /resources/sampleRequest/{id}:
+    get:
+      tags:
+      - "hello"
+      summary: "method api"
+      description: "method api notes"
+      operationId: "getUser"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+        format: "int32"
+      responses:
+        200:
+          description: "success"
+        500:
+          description: "error"
