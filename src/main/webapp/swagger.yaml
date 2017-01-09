@@ -6,14 +6,14 @@ info:
 host: "localhost:7070"
 basePath: "/Swagger/api"
 tags:
-- name: "hello"
+- name: "getUser"
 schemes:
 - "http"
 paths:
   /resources/sampleRequest/{id}:
     get:
       tags:
-      - "hello"
+      - "getUser"
       summary: "method api"
       description: "method api notes"
       operationId: "getUser"
