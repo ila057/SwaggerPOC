@@ -6,17 +6,82 @@ info:
 host: "localhost:7070"
 basePath: "/Swagger/api"
 tags:
-- name: "getUser"
+- name: "userAPIs"
 schemes:
 - "http"
 paths:
-  /resources/sampleRequest/{id}:
+  /resources/deleteRequest/{id}:
+    delete:
+      tags:
+      - "userAPIs"
+      summary: "delete api"
+      description: "delete api notes"
+      operationId: "deleteUser"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+        format: "int32"
+      responses:
+        200:
+          description: "success"
+        500:
+          description: "error"
+  /resources/getRequest/{id}:
     get:
       tags:
-      - "getUser"
-      summary: "method api"
-      description: "method api notes"
+      - "userAPIs"
+      summary: "get api"
+      description: "get api notes"
       operationId: "getUser"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+        format: "int32"
+      responses:
+        200:
+          description: "success"
+        500:
+          description: "error"
+  /resources/postRequest/{id}:
+    post:
+      tags:
+      - "userAPIs"
+      summary: "post api"
+      description: "post api notes"
+      operationId: "postUser"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+        format: "int32"
+      - name: "value"
+        in: "query"
+        required: false
+        type: "integer"
+        format: "int32"
+      responses:
+        200:
+          description: "success"
+        500:
+          description: "error"
+  /resources/putRequest/{id}:
+    put:
+      tags:
+      - "userAPIs"
+      summary: "put api"
+      description: "put api notes"
+      operationId: "putUser"
       produces:
       - "application/json"
       parameters:
