@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<enunciate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="http://enunciate.codehaus.org/schemas/enunciate-1.21.xsd">
+    <title>Swagger</title>
+    <description>Swagger API</description>
+    <api-classes>
+        <exclude pattern="com.bluejeans.services.admin.api.AdminService"/>
+    </api-classes> 
+	<disable-rule id="all.warnings"/>
+    <services>
+        <rest defaultRestSubcontext="Swagger/api"/>
+    </services>
+    <modules>
+    	<docs disabled="false" docsSubdir="Swagger API" freemarkerTemplate="docs.fmt"/>
+    
+    	<jaxrs disabled="false" path="Swagger/api">
+    		<application path="Swagger/api"/>
+    	</jaxrs>
+        <jersey disabled="true"/>
+        <swagger disabled="false" host="ipsita2.bluejeans.com:7070/" basePath="Swagger/api" base="swagger-ui" freemarkerProcessingTemplate="swagger.fmt">
+        	<scheme>http</scheme>
+        </swagger>
+    	<base disabled="true"/>
+		<jaxb disabled="true"/>
+		<jackson1 disabled="true"/>
+		<jackson disabled="false" honorJaxb="true" datatype-detection="passive"/>
+        <java-client disabled="true"/>
+        <idl disabled="true"/>
+        <ruby-json-client disabled="true"/>
+        <php-json-client disabled="true"/>
+        <php-xml-client disabled="true"/>
+        <c-xml-client disabled="true"/>
+        <csharp-xml-client disabled="true"/>
+        <amf disabled="true"/>
+        <obj-c-xml-client disabled="true"/>
+        <jaxws disabled="true"/>
+        <spring-app disabled="true"/>
+        <java-json-client disabled="true"/>
+        <java-xml-client disabled="true"/>
+        <gwt-json-overlay disabled="true"/>
+    </modules>
+</enunciate>

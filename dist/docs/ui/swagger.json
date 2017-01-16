@@ -1,0 +1,146 @@
+{
+  "swagger": "2.0",
+  "info" : {
+    "description" : "Swagger API",
+    "version" : "0.0.0",
+    "title" : "Swagger"
+  },
+  "host" : "ipsita2.bluejeans.com:7070/",
+  "basePath" : "Swagger/api",
+  "schemes" : ["http"],
+  "tags" : [
+    {
+      "name" : "APIWebapp",
+      "description" : ""
+    }
+  ],
+  "definitions" : {
+  },
+  "paths": {
+    "/resources/deleteRequest/{id}" : {
+      "delete" : {
+        "tags" : [ "APIWebapp" ],
+        "description" : "Security Roles Allowed:  <br/>sth",
+        "operationId" : "resource_APIWebapp_deleteUser_DELETE",
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "id",
+            "in" : "path",
+            "type" : "string",
+            "description" : "sth"
+          }
+        ],
+        "responses" : {
+          "204" : {
+            "schema" : {
+
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "/resources/getRequest/{id}" : {
+      "get" : {
+        "tags" : [ "APIWebapp" ],
+        "description" : "Security Roles Allowed:  <br/>sth",
+        "operationId" : "resource_APIWebapp_getUser_GET",
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "id",
+            "in" : "path",
+            "type" : "string",
+            "description" : "sth"
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "/resources/postRequest/{id}" : {
+      "post" : {
+        "tags" : [ "APIWebapp" ],
+        "description" : "Security Roles Allowed:  <br/>sth",
+        "operationId" : "resource_APIWebapp_postUser_POST",
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "id",
+            "in" : "path",
+            "type" : "string",
+            "description" : "sth"
+          },
+          {
+            "name" : "value",
+            "in" : "query",
+            "type" : "string",
+            "description" : "sth"
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+    ,
+    "/resources/putRequest/{id}" : {
+      "put" : {
+        "tags" : [ "APIWebapp" ],
+        "description" : "Security Roles Allowed:  <br/>sth",
+        "operationId" : "resource_APIWebapp_putUser_PUT",
+        "produces" : [ "application/json" ],
+        "parameters" : [
+          {
+            "name" : "id",
+            "in" : "path",
+            "type" : "string",
+            "description" : "sth"
+          }
+        ],
+        "responses" : {
+          "204" : {
+            "schema" : {
+
+            },
+            "headers" : {
+            },
+            "description" : "Success"
+          },
+          "default" : {
+            "description" : "Unexpected error."
+          }
+        }
+      }
+    }
+  }
+}
