@@ -18,7 +18,7 @@
     	</jaxrs>
         <jersey disabled="true"/>
         <swagger disabled="false" host="ipsita2.bluejeans.com:7070/" basePath="Swagger/api" base="swagger-ui" freemarkerProcessingTemplate="swagger.fmt">
-        	<scheme>http</scheme>
+        	<scheme>https</scheme>
         </swagger>
     	<base disabled="true"/>
 		<jaxb disabled="true"/>
