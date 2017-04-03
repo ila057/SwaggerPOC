@@ -3,7 +3,7 @@ Basic Swagger UI implementation (with Intellij Jetty plugin, jersey 1.9 and grad
 
 One can understand how the jersey services work and how to initialize swagger UI for understanding its basic functionality.
 
-To see the swagger UI, start jetty server (preferably through Intellij plugin) and go to the link in <a href=" ">http://localhost:7070/Swagger/#!/hello/getUser</a>. 
+To see the swagger UI, start jetty server (preferably through Intellij plugin) and go to the link in <a href=" ">http://localhost:7070/Swagger/#!/hello/getUser</a>. You may need to add the path to classes folder and the port to start the jetty server (Port:7070).
 
 You may see the API responses here : <a href=" ">http://localhost:7070/Swagger/home/resources/sampleRequest/8/</a>
 
